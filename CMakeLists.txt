@@ -41,3 +41,8 @@ add_executable(benchmark_gp benchmarks/benchmark_gp.cpp)
 target_link_libraries(benchmark_gp stancache)
 set_target_properties(benchmark_gp PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/benchmarks)
 add_test(NAME BenchmarkGPTest COMMAND benchmark_gp)
+
+
+# === Examples ===
+add_executable(example_cpp_only examples/example_cpp_only.cpp)
+target_link_libraries(example_cpp_only stancache)
