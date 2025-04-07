@@ -30,3 +30,22 @@
 *.exe
 *.out
 *.app
+
+
+# Build artifacts
+/build/
+/CMakeFiles/
+/Makefile
+/CMakeCache.txt
+/*.cmake
+/test_gp
+/libstancache.a
+
+# Editor-specific
+.vscode/
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
