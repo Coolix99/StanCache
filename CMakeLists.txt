@@ -15,11 +15,13 @@ include_directories(
 )
 
 # === Main Library ===
-add_library(stancache
+add_library(stancache_objects OBJECT
     src/gaussian_process.cpp
     src/kernel.cpp
     src/interpolator.cpp
 )
+
+add_library(stancache STATIC $<TARGET_OBJECTS:stancache_objects>)
 
 target_include_directories(stancache PUBLIC include)
 
