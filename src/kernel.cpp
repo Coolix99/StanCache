@@ -1,4 +1,3 @@
-// ========== src/kernel.cpp ==========
 #include "stancache/kernel.hpp"
 
 namespace stancache {
